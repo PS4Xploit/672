@@ -1,0 +1,59 @@
+<head>
+<title>PS4 6.72 : Fan</title>
+<script>
+</script>
+<script src="exp_webkit.js"></script>
+</head>
+<body style="background-color:#3462a8;color:white;">
+<h1 id=msgs style='font-size:25px;text-align:center;'>6.72 Fan Exploit</h1>
+<hr><br>
+<div style="text-align:center">
+<button onclick="load_fanthresh(); return false"> L&uuml;fter einstellen auf: </button><select id="tempC"></select>&#176;C<br>Die Standard Temperatur ist 79&#176;C
+<script>
+for(var i=40; i<=79; i++){
+    var select = document.getElementById("tempC");
+    var option = document.createElement("OPTION");
+	select.options.add(option);
+	option.text = i;
+	option.value = i;
+}
+tempC.value=60;
+</script>
+<br>
+</div>
+<script>
+function load_fanthresh(){
+msgs.innerHTML="<h1 style='font-size:25px;text-align:center;'>Lade L&uuml;fter Einstellung ...</h1>";
+LoadedMSG="L&uuml;fter Einstellung geladen ✔";fanTemp=tempC.value;//alert(fanTemp);
+function getScript(source,callback){var gs=document.createElement('script');gs.src=source;gs.onload=callback;gs.async=false;document.body.appendChild(gs);}
+function loadScript(){getScript("exp_kernel.js",function(){setTimeout(jailbreak,500);});}loadScript();
+var script = document.createElement('script');script.src = "pl_fanthresh.js";document.getElementsByTagName('head')[0].appendChild(script);
+var script = document.createElement('script');script.src = "exp_loader.js";document.getElementsByTagName('head')[0].appendChild(script);
+}
+</script>
+<table style="width: 24px; height: 7px; text-align: left; margin-left: auto; margin-right: auto;" border="0" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr>
+<br><br>
+      <td> <a href="./index.html"><img src="ic_action_turn_right.png" alt="" style="border: 0px solid ; width: 64px; height: 64px;" onmouseout="clearInfo()" onmouseover="showInfo('zurück')"></a></td>
+    </tr>
+  </tbody>
+</body>
+<style type="text/css">
+body {
+background-image: url("bg.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height:100%;
+background-color: #267E68;
+color: #ffffff;
+text-shadow: 2px 1px #000000;
+)
+text-align: center; }
+h1 {
+font-family: 'VT323', monospace;
+font-size: 3rem; color: #ffffff;
+margin:0px;
+}
+</body>
+</html>

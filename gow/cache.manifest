@@ -1,6 +1,6 @@
 CACHE MANIFEST 
 # Sandmann! Host Menu v1 
-# 14.10.2020-18:42:27,67 
+# 18.10.2020-16:55:04,48 
 
 apptousb-index.html
 bg.jpg
@@ -15,12 +15,14 @@ exp_webkit.js
 fan-index.html
 favicon.ico
 ftp-index.html
+gtav-index.html
 hen2-index.html
 hen3-index.html
 historyblocker-index.html
 ic_action_bug.png
 ic_action_dev.png
 ic_action_globe.png
+ic_action_gtav.png
 ic_action_joypad.png
 ic_action_linux.png
 ic_action_shield.png
@@ -41,6 +43,7 @@ pl_dbRestore.js
 pl_dumper.js
 pl_fanthresh.js
 pl_ftp.js
+pl_gtav.js
 pl_hen213.js
 pl_hen300.js
 pl_historyBlocker.js
